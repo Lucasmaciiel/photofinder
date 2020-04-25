@@ -1,0 +1,13 @@
+<h1 class="text-center">Photo finder <h5 class="text-muted">by Lucas</h5></h1>
+<div class="text-center mt-3 mb-3">
+    <form>
+        <input
+        class="rounded" 
+        type="search"
+        placeholder="search..."
+        autofocus
+        (keyup)="filter = $event.target.value">
+    </form>
+</div>
+                   
+<ap-photos [photos]="photos | filterByDescription : filter"> </ap-photos>

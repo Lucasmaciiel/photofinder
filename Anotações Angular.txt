@@ -1,0 +1,43 @@
+﻿node -v - versão do node
+npm --version -- versão do npm
+
+Abre a aplicação --> ng serve --open
+--------------------------------
+data binding
+{{ title }} usa-se dentro do fechamento das tags html
+Atributos [src]="url" colchetes usa-se dentro das tags 
+deve sempre fluir do componente para o template
+
+instalação bootstrap --> npm install bootstrap@4.1.1
+
+diretiva *ngFor="let photo of photos" --> sempre usar o let, e photos é o nome que foi declarado no array
+
+unica vez --> npm install
+iniciar a api --> npm start
+http://localhost:3000/flavio/photos endereço da api
+
+modulos --> composição/junção de vários componentes para uma mesma finalidade
+componentes --> classes com determinada função que pode ser utilizada posteriormente
+
+ngOnInit(): void --> componentes possuem ciclo de vida
+
+cria uma interface para funcionar o autoComplete;
+implementar OnInit, a classe vai pedir para implementar o método ngOnInit()
+
+ng generate component photo/photo-list --> gera um componente
+ng generate module errors --> gera um modulo de erro 
+ng generate component errors/not-found 
+
+BrowersModule só pode ser importado no app.module, nos outros modulos, importar o CommonModule, para 
+poder utilizar diretivas tipo ngFor* 
+
+() event build --> da view para o componente
+[] data build --> do componente para a view
+
+| pipe --> como se fosse um tubo, entra de um lado, e sai do outro de outra maneira.
+ex: entra minisculo, e sai maisculo.
+para criar seu proprio pipe criar uma classe
+exemplo.pipe.ts
+utilizar a anotattion @pipe({
+name: nome_do_pipe_aserchamado})
+importar a classe nos modulos tbm.
