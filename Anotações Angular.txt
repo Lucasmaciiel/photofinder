@@ -1,4 +1,16 @@
-﻿node -v - versão do node
+﻿criar um repositório no git 
+acessar a pasta do projeto pelo cmd e dar o comando 
+git init 
+em seguida dar o comando git remote (com o local do git que esta o repositorio)
+git remote add origin git@github.com:Lucasmaciiel/projeto-photos.git
+git remote -v --> visualiza se esta remote 
+em seguida 
+git add . --> adiciona os arquivos para subir 
+git commit -m 'subindo projeto' sobe os arquivos
+
+----------------------------------------------
+
+node -v - versão do node
 npm --version -- versão do npm
 
 Abre a aplicação --> ng serve --open
