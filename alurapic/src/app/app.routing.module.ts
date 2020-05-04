@@ -5,20 +5,29 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 import { PhotoFormComponent } from './photos/photo-form/photo-form.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PhotoListResolver } from './photos/photo-list/photo-list.resolver';
+import { SignInComponent } from './home/sigin/signin.component';
 
 
 const routes: Routes = [
-    { path: 'user/:userName', component: PhotoListComponent, 
-      resolve: {
+    { 
+        path: '', // em branco é o localhost:4200/
+        component: SignInComponent
+    },
+    { 
+        path: 'user/:userName', component: PhotoListComponent, 
+        resolve: {
         photos: PhotoListResolver
         }
+    
     },
     
-    { path: 'p/add',
+    { 
+        path: 'p/add',
         component: PhotoFormComponent
     },
     
-    { path: '**', 
+    { 
+        path: '**', 
         component: NotFoundComponent
     }
 
