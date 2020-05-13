@@ -13,12 +13,12 @@ export class DarkenOnHoverDirective{
   
     @HostListener('mouseover')
     darkenOn() {
-        console.log('passou o mouse');
+        //console.log('passou o mouse');
         this.render.setElementStyle(this.el.nativeElement, 'filter', 'brightness(70%)');
     }
     @HostListener('mouseleave')
     darkenOff() {
-        console.log('tirou o mouse');
+        //console.log('tirou o mouse');
         this.render.setElementStyle(this.el.nativeElement, 'filter', 'brightness(100%)');
     }
 }
