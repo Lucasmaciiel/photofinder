@@ -21,4 +21,5 @@ export class DarkenOnHoverDirective{
         //console.log('tirou o mouse');
         this.render.setElementStyle(this.el.nativeElement, 'filter', 'brightness(100%)');
     }
+    
 }
