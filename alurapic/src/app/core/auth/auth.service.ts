@@ -18,7 +18,7 @@ export class AuthService {
     .pipe(tap( res => {
       const authToken = res.headers.get('x-access-token');
       this.tokenService.setToken(authToken);
-      window.localStorage.setItem('authToken', authToken);
+     // window.localStorage.setItem('authToken', authToken);
       console.log(`User ${userName} authenticated with token ${authToken}`)
     }))
     
