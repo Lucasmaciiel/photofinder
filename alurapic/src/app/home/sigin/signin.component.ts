@@ -21,7 +21,9 @@ export class SignInComponent implements OnInit{
         this.loginForm = this.formBuilder.group({
         userName: ['', Validators.required], // obrigatorios
         password: ['', Validators.required]
+        
     });
+    this.platformDetectorService.isPlatformBrowser() && this.userNameInput.nativeElement.focus();
 
 }
 login() {
@@ -36,7 +38,8 @@ login() {
             err => {
                 console.log(err);
                 this.loginForm.reset();
-                this.platformDetectorService.isPlatformBrowser() && this.userNameInput.nativeElement.focus();
+                this.platformDetectorService.isPlatformBrowser() 
+                && this.userNameInput.nativeElement.focus();
                 alert('invalid user name or password');
             }
         );
