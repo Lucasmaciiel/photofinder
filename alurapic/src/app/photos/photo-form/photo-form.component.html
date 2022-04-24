@@ -13,7 +13,7 @@
         accept="image/*"
         (change)="handleFile($event.target.files[0])">
         <ap-message
-          text="Please, select a photo"
+          text="Por favor, selecione uma foto"
           *ngIf="photoForm.get('file').errors?.required"
           >
         </ap-message>
@@ -32,7 +32,7 @@
         <textarea 
           formControlName="description"
           class="form-control form-control-sm" 
-          placeholder="photo description"></textarea>
+          placeholder="Descreva essa foto/imagem"></textarea>
           <ap-message 
           text="Maximun size allowed is 300" 
           *ngIf="photoForm.get('description').errors?.maxlength">
@@ -41,7 +41,7 @@
 
       <div class="form-group">
         <label class="text-muted">
-          Allow comments
+          Permitir comentários
           <input formControlName="allowComments" type="checkbox">
         </label>
       </div>
