@@ -1,3 +1,10 @@
+## PHOTOFINGER
+
+Ferramentas utilizadas
+- Front - Angular/typescript
+- Backend - Node/Js 
+
+
 ## Para rodar o backend da aplicação
 (Necessário ter o node instalado)
 
@@ -13,4 +20,4 @@
 
 > npm install
 
-> ng serve --open
+> ng serve --open (por padräo rodando na porta 4200)
