@@ -22,3 +22,9 @@ Ferramentas utilizadas
 > npm install
 
 > ng serve --open (por padräo rodando na porta 4200)
+
+## Desktop
+![Screenshot](desktop.png)
+
+## Mobile
+![Screenshot](mobile.png)
