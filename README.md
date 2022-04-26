@@ -6,7 +6,7 @@ Ferramentas utilizadas
 
 
 ## Para rodar o backend da aplicação
-(Necessário ter o node instalado)
+(Necessário ter o node v10.14.2 instalado)
 
 * Dentro da pasta api, rodar os comandos;
 
