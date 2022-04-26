@@ -6,7 +6,7 @@ Ferramentas utilizadas
 
 
 ## Para rodar o backend da aplicação
-(Necessário ter o node v10.14.2 instalado)
+(Necessário ter o node v12.20.2 instalado)
 
 * Dentro da pasta api, rodar os comandos;
 
@@ -15,6 +15,7 @@ Ferramentas utilizadas
 > npm run start (por padrão rodando na porta 3000)
 
 ## Para rodar o front end 
+(Necessário ter o node v12.20.2 instalado)
 
 * Dentro da pasta alurapic, rodar os comandos;
 
