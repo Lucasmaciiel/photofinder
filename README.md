@@ -17,7 +17,7 @@ Ferramentas utilizadas
 ## Para rodar o front end 
 (Necessário ter o node v12.20.2 instalado)
 
-* Dentro da pasta alurapic, rodar os comandos;
+* Dentro da pasta frontend, rodar os comandos;
 
 > npm install
 
